@@ -8,21 +8,37 @@ public class BioskopWithScanner11 {
         String[][] penonton = new String[4][2];
 
         while (true) {
-            System.out.print("Masukkan nama: ");
-            nama = sc.nextLine();
-            System.out.print("Masukkan baris: ");
-            baris = sc.nextInt();
-            System.out.print("Masukkan kolom: ");
-            kolom = sc.nextInt();
+            System.out.println("--MENU--");
+            System.out.println("Menu 1: Input data penonton");
+            System.out.println("Menu 2: Tampilkan daftar penonton");
+            System.out.println("Menu 3: Exit");
+            System.out.print("Pilih 1/2/3: ");
+            int menu = sc.nextInt();
             sc.nextLine();
 
-            penonton[baris - 1][kolom - 1] = nama;
-
-            System.out.print("Input penonton lainnya? (y/n): ");
-            next = sc.nextLine();
-
-            if (next.equalsIgnoreCase("n")) {
+            if (menu == 1) {
+                System.out.println("--Data Penonton--");
+                System.out.print("Masukkan nama: ");
+                nama = sc.nextLine();
+                System.out.print("Masukkan baris: ");
+                baris = sc.nextInt();
+                System.out.print("Masukkan kolom: ");
+                kolom = sc.nextInt();
+                sc.nextLine();
+                penonton[baris - 1][kolom - 1] = nama;
+            } else if (menu == 2) {
+                System.out.println("--Daftar Penonton--");
+                    for (int i = 0; i < penonton.length; i++) {
+                        
+                        System.out.println(String.join(" ", penonton[i]));
+                    }
+                    System.out.println();
+                }
+            else if (menu==3) {
+                System.out.println("Exit!");
                 break;
+            } else {
+                System.out.println("Masukkan inputan yang valid!");
             }
         }
     }
