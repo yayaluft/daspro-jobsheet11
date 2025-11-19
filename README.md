@@ -49,3 +49,24 @@ baris dan kolom kembali
 2. Sudah saya modifikasi.
 3. Sudah saya modifikasi.
 4. Sudah saya modifikasi.
+
+
+**--PERCOBAAN 3--**
+1. Tambahkan kode program sebagai berikut
+    for (int i = 0; i < myNumbers.length; i++) {
+        System.out.println(Arrays.toString(myNumbers[i]));
+    }
+2. Apa fungsi dari Arrays.toString()?
+3. Apa nilai default untuk elemen pada array dengan tipe data int?
+4. Tambahkan kode program berikut
+    for (int i = 0; i < myNumbers.length, i++) {
+        System.out.println("Panjang baris ke-"+(i+1)+" : "+ myNumbers[i].length);
+    }
+5. Array myNumbers memiliki length berbeda untuk setiap barisnya. Apakah panjang array dapat dimodifikasi setelah diinstansiasi?
+
+**--Jawaban: **
+1. Sudah saya modifikasi.
+2. Array.toString() mengubah array menjadi bentuk String, hal ini digunakan untuk menampilkan isi array.
+3. Nilai default untuk elemen array int adalah 0.
+4. Sudah saya modifikasi.
+5. Tidak bisa. Panjang array tidak dapat dimodifikasi setelah diinstasiasi, karena akan memiliki panjang yang selalu tetap 
