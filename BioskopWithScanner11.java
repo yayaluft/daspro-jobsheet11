@@ -36,12 +36,21 @@ public class BioskopWithScanner11 {
                         break;
                     }
                 }
+
             } else if (menu == 2) {
                 System.out.println("--Daftar Penonton--");
                 for (int i = 0; i < penonton.length; i++) {
-                    System.out.println(String.join(" ", penonton[i]));
+                    for(int j=0; j < penonton[i].length; j++) {
+                        if (penonton[i][j] == null) {
+                            System.out.print("*** ");
+                        } else {
+                            System.out.print(penonton[i][j]+" ");
+                        }
+                    }
+                    System.out.println();
                 }
                 System.out.println();
+
             } else if (menu == 3) {
                 System.out.println("Exit!");
                 break;
