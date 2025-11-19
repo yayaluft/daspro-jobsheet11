@@ -5,12 +5,11 @@ public class SIAKAD11 {
         Scanner sc = new Scanner(System.in);
 
         int totalPersiswa = 0;
-        int matkul = sc.nextInt();
         System.out.print("Masukkan jumlah mahasiswa: ");
         int siswa = sc.nextInt();
         System.out.print("Masukkan jumlah mata kuliah: ");
-        int[][] nilai = new int[matkul][siswa];
-
+        int matkul = sc.nextInt();
+        int[][] nilai = new int[siswa][matkul];
         for (int i = 0; i < nilai.length; i++) {
             System.out.println();
             System.out.println("Input nilai mahasiswa ke-" + (i + 1));
